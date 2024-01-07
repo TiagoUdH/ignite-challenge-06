@@ -1,5 +1,7 @@
+import { Text } from "@chakra-ui/react";
+
 export default function Home() {
   return (
-    <h1>Worldtrip</h1>
+    <Text>Worldtrip</Text>
   )
 }
