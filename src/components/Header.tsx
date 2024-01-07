@@ -10,12 +10,7 @@ export function Header() {
   return (
     <Flex
       as="header"
-      w={{
-        base:
-          343,
-        xl:
-          1140
-      }}
+      w={1140}
       mx="auto"
       my={27}
       position="relative"
