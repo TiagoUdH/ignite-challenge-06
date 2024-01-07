@@ -1,6 +1,16 @@
 import { Theme, extendTheme } from "@chakra-ui/react";
 
+const breakpoints = {
+  base: "0px",
+  sm: "375px",
+  md: "768px",
+  lg: "1120px",
+  xl: "1440px",
+  "2xl": "1920px",
+};
+
 export const theme = extendTheme({
+  breakpoints,
   fonts: {
     heading: "Poppins",
     body: "Poppins",
