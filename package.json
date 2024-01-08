@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "server": "json-server server.json --port 3333",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,9 +16,11 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "framer-motion": "^10.17.9",
+    "json-server": "^1.0.0-alpha.13",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
