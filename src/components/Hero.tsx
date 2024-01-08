@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <Box
       as="header"
-      backgroundImage="url('/bg-hero.jpg')"
+      backgroundImage="url('assets/bg-hero.jpg')"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="100% 100%"
@@ -40,7 +40,7 @@ export function Hero() {
           </Text>
         </Box>
 
-        <Image src="airplane.svg" />
+        <Image src="assets/airplane.svg" />
       </Flex>
     </Box>
   );

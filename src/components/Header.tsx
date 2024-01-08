@@ -10,13 +10,13 @@ export function Header() {
   return (
     <Flex
       as="header"
-      w={1140}
+      w={1240}
       mx="auto"
       my={27}
       position="relative"
       align="center"
     >
-      {!isHomePage &&
+      {isHomePage &&
         <Link href="/">
           <Tooltip
             label="Voltar ao Início"
@@ -32,7 +32,8 @@ export function Header() {
               aria-label="Voltar ao Início"
               bg="transparent"
               position="absolute"
-              top="3px"
+              top="50%"
+              transform="translateY(-50%)"
               _hover={{
                 bg: "gray.100"
               }}
@@ -44,7 +45,6 @@ export function Header() {
       <Image
         src='logo.svg'
         mx="auto"
-        pr={10}
         alt='Logo da Worldtrip'
       />
     </Flex >
