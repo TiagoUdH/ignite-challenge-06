@@ -1,5 +1,5 @@
 import { ChevronLeftIcon } from "@chakra-ui/icons";
-import { Flex, IconButton, Image, Tooltip, position } from "@chakra-ui/react";
+import { Flex, IconButton, Image, Tooltip } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -16,7 +16,7 @@ export function Header() {
       position="relative"
       align="center"
     >
-      {isHomePage &&
+      {!isHomePage &&
         <Link href="/">
           <Tooltip
             label="Voltar ao Início"
@@ -47,6 +47,6 @@ export function Header() {
         mx="auto"
         alt='Logo da Worldtrip'
       />
-    </Flex >
+    </Flex>
   )
 }
